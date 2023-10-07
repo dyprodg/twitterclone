@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import {BiHomeCircle, BiUser } from 'react-icons/bi';
-import {BsBell, BsBookmark} from 'react-icons/bs';
+import {BsBell, BsBookmark, BsTwitter} from 'react-icons/bs';
 import {HiOutlineHashtag} from 'react-icons/hi';
 import {HiEnvelope} from 'react-icons/hi2';
 
 const NavigationItems = [
+  {
+    title: 'Twitter',
+    icon: BsTwitter
+  },
   {
     title: 'Home',
     icon: BiHomeCircle 
@@ -33,20 +37,20 @@ const NavigationItems = [
 
 export default function Home() {
   return (
-    <div className='w-full h-full flex justify-center items-center'>
-      <div className='max-w-screen-lg w-full h-full flex relative'>
+    <div className='w-full h-full flex justify-center items-center relative bg-black'>
+      <div className='max-w-screen-xl w-full h-full flex relative'>
         {/* Left Sidebar*/}
-        <section className='fixed w-72 flex flex-col'>
+        <section className='fixed w-[275px] flex flex-col h-screen space-y-4 my-4'>
           {
             NavigationItems.map((item) => (
-              <Link className='bg-white/50 flex items-center justify-center space-x-2 rounded-full p-4' href={`/${item.title.toLocaleLowerCase()}`} key={item.title}>
+              <Link className='hover:bg-white/20 text-2xl transition duration-200 flex items-center justify-start space-x-2 rounded-full py-2 px-6' href={`/${item.title.toLocaleLowerCase()}`} key={item.title}>
                 <div>
                   <item.icon />
                 </div>
-                <div>{item.title}</div>
+                {item.title !== "Twitter" && <div>{item.title}</div>}
               </Link>
-             ))
-          }
+             ))}
+             <button className='w-full rounded-full m-4 bg-primary p-4 text-xl text-center hover:bg-opacity-70 transition duration-200'>Tweet</button>
         </section>
 
 
@@ -55,7 +59,7 @@ export default function Home() {
 
 
         {/* Right Section */}
-        <section>right section</section>
+        <section></section>
       </div>
     </div>
   )
