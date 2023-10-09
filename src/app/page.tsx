@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className='w-full h-full flex justify-center items-center relative bg-black'>
       <div className='max-w-screen-xl w-full h-full flex relative'>
-        {/* Left Sidebar*/}
+        {/* Left Sidebar Navbar */}
         <section className='fixed w-[275px] flex flex-col h-screen space-y-4 my-4'>
           {
             NavigationItems.map((item) => (
@@ -54,11 +54,11 @@ export default function Home() {
         </section>
 
 
-        {/* Main Section*/}
+        {/* Main Section for Blog*/}
         <main></main>
 
 
-        {/* Right Section */}
+        {/* Right Section for Recommandtations and Trendings */}
         <section></section>
       </div>
     </div>
