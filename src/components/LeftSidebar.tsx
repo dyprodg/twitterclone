@@ -37,7 +37,7 @@ const NavigationItems = [
 
 const LeftSidebar = () => {
   return (
-    <section className='fixed w-[275px] flex flex-col items-stretch h-screen'>
+    <section className='fixed  flex flex-col items-stretch h-screen'>
     <div className='flex flex-col items-stretch h-screen space-y-4 my-4'>
     {
       NavigationItems.map((item) => (
@@ -48,7 +48,7 @@ const LeftSidebar = () => {
           {item.title !== "Twitter" && <div>{item.title}</div>}
         </Link>
        ))}
-       <button className='w-full rounded-full m-4 bg-primary p-4 text-xl text-center hover:bg-opacity-70 transition duration-200'>Tweet</button>
+       <button className='w-[180px] lg:w-60 rounded-full m-4 bg-primary p-4 text-xl text-center hover:bg-opacity-70 transition duration-200'>Tweet</button>
     </div>
         {/* Profilbutton */}
     <button className='rounded-full flex items-center justify-between space-x-2 m-4 bg-transparent p-4 text-2xl text-center hover:bg-white/20 transition duration-200 w-full'>

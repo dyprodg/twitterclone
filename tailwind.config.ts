@@ -13,6 +13,17 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '1400': '1400px',
+        '1050': '1050px',
+      },
+      width: {
+        '1/5': '20%',
+      },
+      marginLeft: {
+        '1/5': '20%',
+      },
+      
       colors:{
         primary: "rgb(29, 155, 240)",
       }
@@ -21,3 +32,4 @@ const config: Config = {
   plugins: [],
 }
 export default config
+

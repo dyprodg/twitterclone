@@ -7,7 +7,7 @@ import { IoStatsChart, IoShareOutline } from 'react-icons/io5';
 
 const timeline = () => {
   return (
-    <main className='ml-[320px] flex w-full max-w-[650px] h-full min-h-screen flex-col border-l-[0.5px] border-r border-gray-600'>
+    <main className='ml-[25%] flex w-[650px] h-full min-h-screen flex-col border-l-[0.5px] border-r border-gray-600 mr-12'>
           <h1 className='text-2xl font-bold px-4 py-2 my-4 backdrop-blur bg-black/10 sticky top-0 z-20'>Home</h1>
           <div className='border-t-[0.5px] border-b-[0.5px] px-4 flex items-stretch space-x-2 py-4 border-gray-600 relative'>
             <div className='w-10 h-10 bg-slate-400 rounded-full flex-none'></div>
