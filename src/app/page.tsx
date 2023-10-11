@@ -4,7 +4,6 @@ import MainComp from '@/components/MainComp';
 import { BsSearch } from 'react-icons/bs';
 
 
-
 export default function Home() {
   return (
     <div className='w-full h-full flex justify-center items-center relative bg-black'>
@@ -16,6 +15,7 @@ export default function Home() {
 
 
         <section className='fixed right-0 flex flex-col w-[400px] border items-stretch h-screen px-6'>
+          {/* Search Box */}
           <div className='mt-2'>
             <div className='relative w-full h-full group' >
             <input 
@@ -28,7 +28,7 @@ export default function Home() {
             </label>
             </div>
           </div>
-
+          {/* Trending */}
           <div className='flex flex-col rounded-xl bg-neutral-800 my-3'>
             <h3 className='font-bold text-xl my-2 py-2 px-4'>What's happening</h3>
             <div>
@@ -43,25 +43,26 @@ export default function Home() {
             </div>
           </div>
 
-
+          {/* Follow Rec */}
           <div className='flex flex-col rounded-xl bg-neutral-800 my-3'>
             <h3 className='font-bold text-xl my-2 py-2 px-4'>Who to follow</h3>
             <div>
               {
                 Array.from({length: 3}).map((_,i)=>(
                   <div className='flex justify-between items-center'>
+
                     <div key={i} className='flex hover:bg-white/10 transition duration-100 p-4 space-x-3 items-center'>
                       <div className='w-10 h-10 bg-neutral-600 rounded-full'></div>
                       <div className='flex flex-col'>
-                      <div className='font-bold text-white'>Other User</div>
-                      <div className='text-neutral-400'>@otheruser1234</div>
-                  </div>
-                  </div>
-                  
-
+                        <div className='font-bold text-white'>Other User</div>
+                        <div className='text-neutral-400'>@otheruser1234</div>
+                      </div>
+                    </div>
+                    
                     <div>
                       <button className='rounded-full px-6 py-2 mx-4 bg-white text-black'>Follow</button>
                     </div>
+
                   </div>
                 ))
               }
@@ -69,16 +70,7 @@ export default function Home() {
           </div>
 
 
-          
 
-
-
-
-
-
-
-
-          <div></div>
         </section>
       </div>
     </div>
