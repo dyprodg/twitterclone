@@ -45,24 +45,24 @@ const LeftSidebar = () => {
           <div>
             <item.icon />
           </div>
-          {item.title !== "Twitter" && <div>{item.title}</div>}
+          {item.title !== "Twitter" && <div className='hidden 800:block'>{item.title}</div>}
         </Link>
        ))}
-       <button className='w-[180px] lg:w-60 rounded-full m-4 bg-primary p-4 text-xl text-center hover:bg-opacity-70 transition duration-200'>Tweet</button>
+       <button className='hidden 800:block w-[180px] lg:w-60 rounded-full m-4 bg-primary p-4 text-xl text-center hover:bg-opacity-70 transition duration-200'>Tweet</button>
     </div>
         {/* Profilbutton */}
-    <button className='rounded-full flex items-center justify-between space-x-2 m-4 bg-transparent p-4 text-2xl text-center hover:bg-white/20 transition duration-200 w-full'>
+    <button className='rounded-full flex items-center justify-between space-x-2  bg-transparent p-4 text-2xl text-center hover:bg-white/20 transition duration-200 800:w-[200]'>
       
       <div className='flex items-center space-x-2'>  
       <div className='rounded-full bg-slate-400 w-10 h-10 '>
         </div>
         <div className='text-left text-sm'>
-          <div className='font-semibold'>Dennis Diepolder</div>
-          <div className=''>@dyprodg</div>
+          <div className='font-semibold hidden 950:block'>Dennis Diepolder</div>
+          <div className='hidden 800:block'>@dyprodg</div>
         </div>
       </div>
       
-      <div>
+      <div className='hidden 800:block'>
         <BsThreeDots />
       </div>
     </button>
