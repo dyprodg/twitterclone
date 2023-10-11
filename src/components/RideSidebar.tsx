@@ -41,9 +41,9 @@ const RideSidebar = () => {
             <div>
               {
                 Array.from({length: 3}).map((_,i)=>(
-                  <div className='flex justify-between items-center'>
+                  <div key={i} className='flex justify-between items-center'>
 
-                    <div key={i} className='flex hover:bg-white/10 transition duration-100 p-4 space-x-3 items-center'>
+                    <div  className='flex hover:bg-white/10 transition duration-100 p-4 space-x-3 items-center'>
                       <div className='w-10 h-10 bg-neutral-600 rounded-full'></div>
                       <div className='flex flex-col'>
                         <div className='font-bold text-white'>Other User</div>
